@@ -2,6 +2,7 @@ export * from "./cli";
 export * from "./sdk";
 export * from "./ipc";
 export * from "./gd";
+export * from "./buildMod"
 
 import { cli } from "./cli";
 import { sdk } from "./sdk";

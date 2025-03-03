@@ -62,6 +62,18 @@ export async function activate(context: ExtensionContext) {
 	);
 
 	context.subscriptions.push(
+		commands.registerCommand("geode.buildMod", async() => {
+			channel.appendLine("Building Mod...");
+			const res = await geode.buildMod.buildMod();
+			if (res.isError()) {
+				window.showErrorMessage(
+					`Build Failed: ${res.unwrapErr()}`,
+				);
+			}
+		}),
+	);
+
+	context.subscriptions.push(
 		commands.registerCommand("geode.openSpriteBrowser", async () => {
 			browser.open();
 		}),

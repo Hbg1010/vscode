@@ -9,6 +9,7 @@ This is a rewrite and enhancement of the previous `geode-support` extension, whi
 ## Features
 
  * Launch GD (`Geode: Launch Geometry Dash` command).
+ * Build Mods (`Geode: Build Mod` command).
  * Validation for `mod.json`
  * Sprite browser (Use the `Ctrl + Alt + B` shortcut to launch, or `Geode: Open Sprite Browser`)
  * Colorization for `FLAlertLayer` tags
